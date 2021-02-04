@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <!--prints the title of the tab-->
+ <title>Video Game Library Lookup</title>
+ <meta charset="UTF-8">
+
+ </head>
+ <body>
+ 
+<!--display starting messages and get choice-->
+ <form method="post" action="VideoGameLookup.php">
+	<center><h1>Video Game Library Lookup</h1></center><br>
+	<center><h2>Choose either a single record lookup or a range record lookup.</h2></center><br>
+	<center><h2>Single record lookup: </h2></center><br>
+	<center> Game ID: <input type="number" name="SingleID">
+	<center><h2>Range record lookup: </h2></center><br>
+	<center> Starting Game ID: <input type="number" name="StartID">
+	<center> Ending Game ID: <input type="number" name="EndID">
+
+	<br><br>
+	<center><h2>Choose the fields to display.</h2></center><br>
+	
+	<table>
+    <tr>
+	<!--display check boxs-->
+ 	  <td><input type="checkbox" name="DisGameID" value="Y"></td>
+	  <td>Game ID</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="DisTitle" value="Y"></td>	
+      <td>Title</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="DisPublisher" value="Y"></td>	
+      <td>Publisher</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="DisESBRating" value="Y"></td>	
+      <td>ESB Rating</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="DisPlatform" value="Y"></td>
+	  <td>Platform</td>
+    </tr>
+    </table>
+	
+	<!--make a lot of new lines-->
+	<br><br><br><br>
+	<!--make a button with text to submit choice--> 
+	<center> <input type="submit" name="sel" value="Submit";></center>
+ </form>
+ 
+ 
+</body>
+</html>
